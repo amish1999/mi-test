@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MI Test</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Pacifico|Play|Cinzel|Courgette|Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Economica|Open+Sans+Condensed:300|Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Zilla+Slab+Highlight" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Cabin+Sketch|Open+Sans+Condensed:700|Zilla+Slab+Highlight" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Economica|Open+Sans+Condensed:300|Unica+One" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/hh1.png">
+      <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+    <style type="text/css">
+
+        .center{
+            font-family: 'Unica One', cursive;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-family: 'Economica', sans-serif;
+            font-family: 'Amatic SC', cursive;
+            font-size: 80px;
+            height: 150px;
+            background-color: grey;
+        }
+        .person{
+            font-family: 'Unica One', cursive;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-family: 'Economica', sans-serif;
+            font-family: 'Amatic SC', cursive;
+            font-weight: bold;
+            text-align: center;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+    <body style="background-image: url(img/181.jpeg);">
+
+        <div class="header "><a style="text-decoration: none;" href="index.html"><font color="grey">Multiple Intelligence</font> Test</a>
+            <p style="float:right;margin-right:5px;margin-bottom:0px;font-size:20px;color:rgb(22, 67, 75);padding:10px">Discover your personality<br></p>
+        </div>
+        <div class="d2">
+                        <div class="dropbtn" onclick="myfunction()"><img src="img/images.png" height="25px" width="30px"	>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        </div>
+                        <!-- <a href="about.html"><div class="d1"><font>ABOUTUS</font></div></a> -->
+                        <a href="desc.html"><div class="d1" ><font>Know your special interests & skills</font></div></a>
+                       <!-- <a href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator"><div class="d1"><font>Explore</font></div></a> -->
+    
+                        <!-- <a href="Signinpage.html"><div class="d1"><font>Signin</font></div></a>
+                        <button style="float:right;margin-top:10px;border-radius:5px;background-color:rgb(209, 228, 209)"  onclick="window.location='https://www.google.co.in/'">Search</button>
+                        <input type="search" placeholder="Search here" style="float:right;margin:5px;width:300px;height:30px;"> -->
+    
+    
+        </div>
+
+
+<br><br><br>
+<div class="center">Your Personality Analysis !!!</div><br><br>
+
+<div id="result" align="center" style="font-family: 'Unica One', cursive;
+            font-family: 'Unica One', cursive;
+            font-size: 55px;
+            color: black; font-weight: bold;"></div><br><br><hr width="80%"><br><br>
+            <div id="all" class="person"></div>
+<div id="check" align="center" style="word-spacing: 10px; padding: 50px;line-height: 2; font-family: 'Zilla Slab Highlight', cursive;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Boogaloo', cursive;
+font-family: 'Cabin Sketch', cursive; font-size: 30px"></div>
+
+
+<script type="text/javascript">
+    var str;
+    var final;
+    if(sessionStorage.e>sessionStorage.i){
+      str='E';
+      final="Linguistic - ";
+    }
+    else{
+        str='I'
+        final="Logical - ";
+    }
+    if(sessionStorage.s>sessionStorage.in){
+      str=str+'S';
+      final=final+"Musical - ";
+    }
+    else{
+        str=str+'N';
+        final=final+"Spatial - ";
+    }
+    if(sessionStorage.t>sessionStorage.f){
+      str=str+'T';
+      final=final+"Kinesthetic - ";
+    }
+    else{
+       str=str+'F';
+       final=final+"Interpersonal - ";
+    }
+    if(sessionStorage.p>sessionStorage.j){
+      str=str+'P';
+      final=final+"Intrapersonal - ";
+    }
+    else{
+        str=str+'J'
+        final=final+"Naturalist ";
+    }
+    document.getElementById("result").innerHTML="Personality type : "+str;
+    document.getElementById("all").innerHTML=""+final;
+
+        if(str=="INTJ")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="INTP")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ENTJ")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ENTP")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="INFJ")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="INFP")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ENFJ")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ENFP")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ISTJ")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ISFJ")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ESTJ")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ESFJ")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ISTP")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ISFP")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ESTP")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+        else if(str=="ESFP")
+        {
+            document.getElementById("check").innerHTML="children who display an aptitude for numbers, reasoning, and problem-solving. This is the other half of the children who typically do well in traditional classrooms where teaching is logically sequenced and students are asked to conform. <br><strong>Skills & Interest Areas</strong><br> Problem-solving (logical & math), performing experiments <br><strong>Famous people with high logical Intelligence:</strong><br>Nicola Tesla, Stephen Hawking, Bill Gates";
+        }
+
+
+</script>
+<div class="details"></div>
+<a href="desc.html"><center><button style="background-color: lightgrey; font-size: 40px; font-family: font-family: 'Unica One', cursive;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-family: 'Economica', sans-serif;
+            font-family: 'Amatic SC', cursive; font-weight: bold; border-radius: 10px; border-color: black">CHECK OUT OTHER PERSONALITIES</button></center></a><br><br>
+</body>
+</html>
