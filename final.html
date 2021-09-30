@@ -78,16 +78,41 @@ font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Boogaloo', cursive;
 font-family: 'Cabin Sketch', cursive; font-size: 30px"></div>
 
-
-<!-------------->
-        
-        
-        
-        
-        
-        
-        
-        
+<script type="text/javascript">
+    var str;
+    var final;
+    if(sessionStorage.e>sessionStorage.i){
+      str='E';
+      final="Linguistic - ";
+    }
+    else{
+        str='I'
+        final="Logical - ";
+    }
+    if(sessionStorage.s>sessionStorage.in){
+      str=str+'S';
+      final=final+"Musical - ";
+    }
+    else{
+        str=str+'N';
+        final=final+"Spatial - ";
+    }
+    if(sessionStorage.t>sessionStorage.f){
+      str=str+'T';
+      final=final+"Kinesthetic - ";
+    }
+    else{
+       str=str+'F';
+       final=final+"Interpersonal - ";
+    }
+    if(sessionStorage.p>sessionStorage.j){
+      str=str+'P';
+      final=final+"Intrapersonal - ";
+    }
+    else{
+        str=str+'J'
+        final=final+"Naturalist ";
+    }    
         
     document.getElementById("result").innerHTML="Personality type : "+str;
     document.getElementById("all").innerHTML=""+final;
